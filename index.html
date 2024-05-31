@@ -9,6 +9,38 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Computer modern roman", serif}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+	
 </style>
 </head>
 <body class="w3-black">
