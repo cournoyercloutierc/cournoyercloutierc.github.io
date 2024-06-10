@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Claude Cournoyer-Cloutier</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+	
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="Headshot-white-background.png" style="width:100%" alt="Avatar">
+        </div>
+        <div class="w3-container">
+	  <p class="w3-large"><b><i class=" w3-text-teal"></i>Claude Cournoyer-Cloutier</b></p>
+          <p><i class="w3-large w3-text-teal"></i>PhD Candidate in Astrophysics | McMaster University</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i><a href="mailto:cournoyc@mcmaster.ca">cournoyc@mcmaster.ca</a></p>
+	  <img alt="ORCID logo" src="ORCID-logo.jpeg" width="20" height="20" />
+		 &nbsp&nbsp&nbsp&nbsp <a href="https://orcid.org/0000-0002-6116-1014">0000-0002-6116-1014 </a>
+	  <p><i class="fa fa-certificate fa-fw w3-margin-right w3-large w3-text-black"></i><a href="CV_June_2024.pdf" target="_blank">Curriculum Vitae</a>
+	  </a>
+          <hr>
+
+          <p class="w3-large"><b><i class=" w3-text-teal"></i>About me</b></p>
+          <p>I am a PhD Candidate in Astrophysics at McMaster University, expected to graduate in August 2025. 
+		  I have received a MSc from McMaster in 2021, and a BSc from McGill in 2019. 
+		  I am passionate about astronomy and astrophysics, and I strongly believe that science is for everyone. 
+		  I have been involved in several EDI initiatives since I started my post-secondary education, and I am a firm 
+		  advocate for incorporating EDI practices in outreach and teaching. I have extensive outreach experience in astronomy, 
+		  physics, and history, including current work with McMaster's W. J. McCallion planetarium and portable planetarium. 
+		  As head teaching assistant for McMaster's Department of Physics & Astronomy two largest courses since 2020, 
+		  I have implemented several new marking practices to make grading more fair and equitable to students.</p>
+          
+        </div> 
+	</div><br>
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-display-container w3-center" style="width:75%;margin:auto;">
+          <img src="fullMovie1.gif" style="width:100%" alt="Movie">
+      </div>
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Research interests</h2>
+        <div class="w3-container">
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+      </div>
+
+    <!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:black;">
+    Binaries in clusters
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:black;">
+    Cluster structure
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:black;">
+    Binary evolution
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:white">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 1</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:white">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 2</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:white">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
